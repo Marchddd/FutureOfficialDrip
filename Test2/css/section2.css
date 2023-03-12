@@ -1,0 +1,533 @@
+.LatestNews {
+	/* z-index: -98; */
+	position: relative;
+	margin-top: -100px;
+	width: 100%;
+	padding-bottom: 60px;
+}
+
+.main {
+	display: flex;
+	justify-content: space-between;
+	width: 1200px;
+	margin: 0 auto;
+
+}
+
+@media screen and (max-width:1120px) {
+	.main {
+		justify-content: center;
+		width: 96%;
+	}
+}
+
+.LatestNews h1 {
+
+	font-size: 25px;
+	color: white;
+	margin-bottom: 5px;
+}
+
+/* 左侧部分 */
+.x {
+	width: 63%;
+}
+@media screen and (max-width:768px){
+	.main{
+		flex-wrap: wrap;
+	}
+}
+@media screen and (max-width:768px){
+	.x{
+		justify-content: center;
+		width: 90%;
+	}
+}
+@media screen and (max-width:768px){
+	.y{
+		width: 90%;
+		flex-grow: 1;
+		margin-left: 30px;
+		margin-right: 30px;
+	}
+}
+.tang {
+	background-color: white;
+	height: 620px;
+}
+
+.photo {
+	width: 100%;
+	height: 350px;
+	overflow: hidden;
+	transition: all 0.7s;
+}
+
+.photo img {
+	height: 100%;
+	width: 100%;
+	transition: all 0.4s;
+}
+
+.photo img:hover {
+	transform: scale(1.10);
+}
+
+.font {
+	padding-top: 30px;
+}
+
+.tag {
+	/* padding-top:30px ; */
+	height: 30px;
+	line-height: 30px;
+	color: blue;
+	width: 100px;
+	padding-left: 20px;
+	border-top: 1px solid blue;
+	border-right: 1px solid blue;
+	border-bottom: 1px solid blue;
+	transition: all 0.4s;
+}
+
+.tang:hover {
+	/* transform:translateY(-5px) ; */
+	box-shadow: 5px 5px 5px;
+}
+
+.font h2 {
+	color: black;
+	font-size: 21px;
+	font-weight: 400;
+	padding: 10px 20px;
+}
+
+.font p {
+	color: black;
+	font-weight: 400;
+	font-size: 17px;
+	padding: 10px 20px;
+}
+
+/* 旅行模块 */
+.second_line {
+	display: flex;
+	justify-content: space-between;
+}
+
+.travel {
+	margin-top: 15px;
+	width: 49%;
+	height: 620px;
+}
+
+.travel .photo {
+	height: 250px;
+}
+
+.second_line_bottom {}
+
+.travel {
+	background-color: #0052d9;
+	color: white;
+}
+
+.travel .font h2 {
+	color: white;
+}
+
+.travel .font p {
+	color: white;
+}
+
+.travel .tag {
+	color: white;
+	border-top: 1px solid white;
+	border-right: 1px solid white;
+	border-bottom: 1px solid white;
+}
+
+.travel:hover {
+	transform: translateY(-5px);
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+
+}
+
+.code {
+	margin-top: 15px;
+	width: 49%;
+	height: 620px;
+	background-color: white;
+}
+
+.code .photo {
+	height: 250px;
+}
+
+
+.code:hover {
+	transform: translateY(-5px);
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+}
+
+/* 为她力量喝彩模块 */
+.congratulate {
+	margin-top: 15px;
+	background-color: white;
+	height: 620px;
+}
+
+.congratulate:hover {
+	transform: translateY(-5px);
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+}
+
+
+
+
+
+/* 碳中和 */
+.carbonNeutralityfa{
+	position: relative;
+	width: 100%;
+	height: 350px;
+}
+.carbonNeutrality {
+	position: relative;
+	margin-top: 15px;
+	width: 100%;
+	height: 350px;
+	overflow: hidden;
+}
+
+.carbonNeutrality . img {
+	width: 100%;
+	height: 100%;
+}
+
+.carbonNeutrality::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	height: 100%;
+
+	cursor: pointer;
+
+}
+
+.carbonNeutrality:hover::after {
+	transform: translateY(-5px);
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+}
+.carbonNeutrality:hover img{
+	transform: scale(1.10);
+}
+
+.carbonNeutralityfont{
+	position: absolute;
+	top: 30%;
+	left: 10%;
+	color: white;
+}
+.carbonNeutralityfont h3{
+	font-size: 24px;
+	font-weight: 450;
+	
+}
+.carbonNeutralityfont p{
+	font-size: 18px;
+	margin-top: 10px;
+}
+
+.y {
+
+	right: 0;
+
+	width: 34%;
+
+}
+
+.help {
+	width: 100%;
+	height: 620px;
+	background-color: #00a9ce;
+}
+
+.help .photo {
+	height: 250px;
+}
+@media screen and (max-width:768px){
+	.help{
+		margin-top: 15px;
+	}
+}
+
+.help .font h2 {
+	color: white;
+}
+
+.help .font p {
+	color: white;
+}
+
+.help .tag {
+	color: white;
+	border-top: 1px solid white;
+	border-right: 1px solid white;
+	border-bottom: 1px solid white;
+}
+
+.help:hover {
+	transform: translateY(-5px);
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+}
+
+.wechat {
+	width: 100%;
+	height: 620px;
+	background-color: #d8d7df;
+}
+
+.wechat .photo {
+	margin-top: 15px;
+	height: 250px;
+
+}
+
+.wechat:hover {
+	transform: translateY(-5px);
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+}
+
+.technology {
+	margin-top: 15px;
+	width: 100%;
+	height: 620px;
+	background-color: #0052d9;
+	color: white;
+}
+
+
+.technology .photo {
+	height: 250px;
+}
+
+.technology .font h2 {
+	color: white;
+}
+
+.technology .font p {
+	color: white;
+}
+
+.technology .tag {
+	color: white;
+	border-top: 1px solid white;
+	border-right: 1px solid white;
+	border-bottom: 1px solid white;
+}
+
+.technology:hover {
+	transform: translateY(-5px);
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+
+}
+
+
+.shipin {
+	margin-top: 15px;
+	width: 100%;
+	height: 350px;
+	background-color: darksalmon;
+}
+
+.shipin:hover {
+	transform: translateY(-5px);
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+}
+
+.shipin_erzi {
+	display: block;
+	position: relative;
+	height: 100%;
+	width: 100%;
+	background: url('../img/shipin.jpg') no-repeat;
+	background-size: cover;
+}
+
+.shipin_erzi h3 {
+	position: absolute;
+	font-size: 25px;
+	color: white;
+	font-weight: 450;
+	top: 150px;
+	left: 20px;
+
+}
+
+.bofang {
+	position: absolute;
+	height: 72px;
+	width: 72px;
+	border-radius: 50%;
+	background-color: blue;
+	top: 140px;
+	left: 40%;
+	transition: 0.3s;
+}
+
+.triangle {
+	position: absolute;
+	width: 0;
+	height: 0;
+	
+	border-top: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-left: 10px solid white;
+	border-bottom: 10px solid transparent;
+	top: 40%;
+	left: 45%;
+	transition: 0.3s;
+}
+.shipin:hover .bofang{
+	background-color: white;
+}
+.shipin:hover .triangle{
+	border-top: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-left: 10px solid blue;
+	border-bottom: 10px solid transparent;
+}
+
+
+
+.shipin video{
+	display: none;
+	position: relative;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+/* 第三部分,介绍公司 */
+
+.company {
+	background-color: whitesmoke;
+
+}
+
+.introduce {
+	padding: 50px 0 50px 0;
+	display: flex;
+	/* 当遇到空间不足的时候,会自动换行 */
+	justify-items: flex-start;
+	align-items: stretch;
+
+}
+
+.introduce ul li {
+	display: inline-block;
+	width: 30%;
+	margin-left: 19px;
+	margin-top: 19px;
+
+}
+
+.introduce_photo {
+	position: relative;
+	width: 100%;
+	height: 250px;
+	transition: all 0.4s;
+	overflow: hidden;
+}
+
+.introduce_photo img {
+	width: 100%;
+	height: 100%;
+	transition: all 0.4s;
+}
+
+.introduce_photo::after {
+	display: none;
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba(38, 82, 182, .6);
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+
+.introduce_photo:hover::after {
+	display: block;
+}
+.introduce_photo:hover img{
+	transform: scale(1.10);
+}
+.introduce_photo .gg {
+
+	text-align: center;
+	line-height: 80px;
+	width: 200px;
+	height: 80px;
+	position: absolute;
+	top: 70px;
+	left: 25%;
+	z-index: 6;
+}
+
+.introduce_photo .gg h1 {
+	font-size: 26px;
+	color: white;
+	
+}
+.underline{
+	position:absolute;
+	bottom: 0;
+	left: 46px;
+	height: 2px;
+	width: 0;
+	background-color: white;
+	transition: all 0.4s;
+}
+.introduce_photo:hover .underline{
+	width: 110px;
+}
+.gg::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	height: 2px;
+	width: 0;
+}
+
+.gg:hover::after {
+	width: 200px;
+}
+
+@media screen and (max-width:1003px) {
+	.introduce ul li {
+		width: 45%;
+	}
+}
+
+/* 
+.the_right{
+	position: fixed;
+	bottom: 80px;
+	right:80px;
+	height: 80px;
+	width: 80px;
+	border-radius: 40px;
+	border: 3px solid #0052d9;
+}
+.the_right a{
+	display: block;
+	height: 80px;
+	width: 80px;
+	border-radius: 40px;
+} */

@@ -1,0 +1,412 @@
+	
+
+	
+
+.w {
+	width: 1200px;
+	margin: 0 auto;
+}
+@media screen and (max-width:1120px){
+	.w{
+		width: 96%;
+	}
+}
+body {
+	overflow: scroll;
+	overflow-x: hidden;
+}
+/* 头部导航部分 */
+.nav-box{
+	position: fixed;
+	top: 0;
+	height: 69px;
+	width: 100%;
+/* 	background-color: #b9dee7; */
+	z-index: 100;
+}
+.nav {
+	position: relative;
+	height: 69px;
+	
+}
+
+/* 侧边栏的更多的地方 */
+.nav-more {
+	display: none;
+	position: absolute;
+	top: 15px;
+	left:15px;
+	width: 50px;
+	height: 30px;
+  background:url(../img/mobile/more.png) no-repeat center ;
+    background-size: contain;
+}
+
+
+@media screen and (max-width:768px){
+	.nav-more{
+		display: block;
+	}
+}
+
+/* 侧边栏更多的更多的地方
+ */
+.nav-more-more{
+	display: none;
+	position: fixed;
+	left: 0;
+	width: 250px;
+	height: 500px;
+	background-color: white;
+}
+.nav-more-more p {
+	font-size: 19px;
+	margin-left: 15px;
+	margin-top: 10px;
+	width: 50px;
+}
+.nav-more-more ul {
+	margin-top: 85px;
+	font-size: 19px;
+}
+.nav-more-more ul li {
+	margin-left: 50px;
+	margin-top: 25px;
+}
+/* @media screen and (max-width:768px){
+	.nav-more-more{
+		display: block;
+	}
+} */
+/* logo的地方 */
+
+.logo-header a {
+	position: absolute;
+	top: 15px;
+    display: inline-block;
+    height: 30px;
+    width: 300px;
+    background: url(../img/index/menu_logo.png) no-repeat ;
+    background-size: contain;
+    overflow: hidden;
+}
+
+@media screen and (max-width:768px){
+	.logo-header a{
+		position: absolute;
+		left: 50%;
+		top: 15px;
+		margin-left: -100px;
+	}
+}
+
+/* 中间可以下拉的部分 */
+.nav-center{
+	display: block;
+	cursor: pointer;
+	position: absolute;
+	right: 150px;
+	top: 10px;
+	display:inline-block ;
+	height: 50px;
+	/* width: 650px; */
+	
+}
+#items {
+	display: flex;
+	position: relative;
+}
+
+
+.same7{
+	
+/* 	width: 8%; */
+	margin-left: 50px;
+	/* display: inline-block; */
+	width: 55px;
+	line-height: 50px;
+	height: 52px;
+}/* 
+.same7 ul li{
+	width: 80px;
+} */
+
+.same7 ul{
+	display: none;
+	width: 122px;
+	
+}
+
+
+
+.nav-center ul li a {
+	font-size: 17px;
+	font-weight: 600;
+	color: white;
+}
+
+.first1{
+	
+}
+.second1{
+	z-index: 2;
+	
+}
+.third1{
+	z-index: 3;
+}
+
+.fifth1{
+	width: 60px;
+}
+
+
+/* 当鼠标经过items的时候,整个导航不服nav-box高度都会变宽 */
+.nav-box:has(.nav-center:hover){
+	height: 450px;
+	background-color: white;
+}
+
+.nav-center:hover #items a{
+	color: black;
+}
+/* 接下来,当鼠标经过各自的a的时候,各自的ul下拉 */
+.first:hover .first1{
+	display: block;
+}
+.second:hover .second1{
+	display: block;
+}
+.third:hover .third1{
+	display: block;
+}
+.forth:hover .forth1{
+	display: block;
+}
+.fifth:hover .fifth1{
+	display: block;
+}
+.sixth:hover .sixth1{
+	display: block;
+}
+
+
+
+
+@media screen and (max-width:1120px){
+	.nav-center ul li{
+		margin-left: 10px;
+	}
+}
+
+@media screen and (max-width:1050px){
+	.nav-center ul li{
+		margin-left: 2px;
+	}
+}
+
+/* 右边可以转换语言的地方 */
+.transform{
+	position: absolute;
+	right: 0;
+	top: 10px;
+	display: inline-block;
+}
+
+.transform li{
+	display: inline-block;
+	line-height: 50px;
+	font-size: 17px;
+	font-weight: 600;
+	color: white;
+}
+.nav-center-left{
+	font-weight: 600;
+	font-size: 15px;
+	color: white;
+}
+.nav-center-right{
+	font-weight: 400;
+	font-size: 15px;
+}
+li .nav-center-left:hover{
+	color: white;
+}
+li .nav-center-right:hover{
+	color: white;
+}
+
+@media screen and (max-width:768px){
+	.nav-center,.transform{
+		display: none;
+	}
+}
+
+
+/* 第一部分轮播图制作 */
+.section1{
+	overflow: hidden;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+	height: 670px;
+	width: 100vw;
+	z-index: -100;
+}
+/* 写一下它的遮罩层 */
+.section1::after{
+	
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	height: 100%;
+	z-index: -99;
+	cursor: pointer;
+}
+
+.headerList{
+	width: 600vw;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	
+}
+.headerList li{
+	float: left;
+	height: 100%;
+}
+.headerList li img{
+	
+	height: 100%;
+	width: 100vw;
+	object-fit: cover;
+}
+.header_wenzi{
+	width: 600px;
+	padding-left: 20px;
+	padding-right: 20px;
+	position: absolute;
+	z-index: 3;
+	bottom: 250px;
+	color: white;
+}
+.header_wenzi h1{
+	font-weight: 510;
+	font-size: 3.1875em;
+	padding-bottom: 98px;
+	
+}
+.header_wenzi  p{
+	font-size: 20px;
+	
+}
+
+
+.fenge{
+  position: absolute;
+  bottom: 2px;
+  width: 100%;
+  height: 5px;
+  background-color: white;
+}
+.first_arrow{
+	position:relative;
+	height: 70px;	
+	
+	margin-top: 480px;
+	
+}
+
+.first_arrow_left{
+	
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	left: 0;
+	top: 0;
+	width: 200px;
+	height: 100%;
+	
+}
+.first_arrow_left_left{
+	width: 50%;
+	height: 100%;
+}
+.first_arrow_left_left img{
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+	transform: rotate(180deg);
+}
+.first_arrow_left_right{
+	width: 50%;
+	height: 100%;
+}
+.first_arrow_left_right img{
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+	
+}
+
+
+.first_bottom_right_arrow{
+	position: absolute;
+	display: flex;
+	justify-content:space-between;
+	right: 0;
+	bottom: 0;
+	width: 200px;
+	height: 100%;
+	
+	
+}
+.first_bottom_right_arrow a{
+	margin-top: 30px;
+	display: inline-block;
+	height: 1.25em;
+	width: 1.25em;
+	background-color: white;
+}
+
+
+
+/* 导航起飞弄一下 */
+.eight_a{
+	display: block;
+}
+
+.eight{
+	position: fixed;
+	right: 36px;
+	bottom: 36px;
+	height: 60px;
+	width: 60px;
+	border-radius: 50%;
+	border: solid blue 2px;
+	background-color: white;
+	z-index: 4;
+	transition: all 0.3s;
+}
+.eight_arrow{
+	width: 12px;
+	height: 12px;
+	margin-top: calc(50% - 3px);
+	margin-left: calc(50% - 6px);
+	transform: rotate(-135deg);
+	border-bottom: 2px solid blue;
+	border-right: 2px solid blue;
+	transition: all 0.3s;
+}
+.eight:hover{
+	background-color: blue;
+}
+.eight:hover .eight_arrow{
+	border-bottom: 2px solid white;
+	border-right: 2px solid white;
+}
+

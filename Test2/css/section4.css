@@ -1,0 +1,211 @@
+/* 第六部分轮播图界面 */
+.six{
+	position: relative;
+	background-color: navajowhite;
+}
+.six_container{
+	position: relative;
+	margin-left:auto ;
+	margin-right: auto;
+	overflow: hidden;
+	z-index: 1;
+}
+.six_subbanner{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 2;
+	padding: 8vw 6vw;
+}
+.six_subbanner_main{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+#slideshow{
+	z-index: 1;
+	width: 100vw;
+	height: 90vh;
+	position: relative;
+	
+
+}
+#imgcontain{
+	position: absolute;
+	width: 400vw;
+	height: 90vh;
+}
+#imgcontain li{
+	float: left;
+	display: inline-block;
+}
+#imgcontain li img{
+	width: 100vw;
+	height: 90vh;
+	object-fit: cover;
+}
+.six_subbanner_bottom{
+	z-index: 2;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+}
+.six_subbanner_bottom{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.six_bottom_left_arrow{
+	position: absolute;
+	margin-left: 10vw;
+	
+	width: 20vw;
+	height: 13vw;
+}
+.six_bottom_left_arrow{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+}
+.arrow_right,.arrow_left{
+	height: 13vw;
+	padding-top: 3vw;
+}
+
+.arrow_left img{
+	transform: rotateY(180deg);
+}
+.six_bottom_right_arrow{
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	bottom: 0;
+	right: 8vw;
+	/* background-color: darksalmon; */
+	width: 5vw;
+	height: 3vw;
+}
+
+.six_bottom_right_arrow a{
+	display: inline-block;
+	height: 1vw;
+	width: 1vw;
+	background-color: white;
+}
+
+
+
+
+.seven{
+	height: 480px;
+	background-color: #fbfbfb;
+}
+.seven_main{
+	position: relative;
+}
+.seven_top{
+	position: relative;
+	height: 75px;
+	
+}
+.seven_top p {
+	position: absolute;
+	top:19px;
+	font-size: 18px;	
+}
+.seven_top ul{
+	position: absolute;
+	left: 100px;
+}
+.seven_top ul li{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	line-height: 75px;
+	margin-left: 30px;
+	margin-top: 6px;
+}
+.seven_top ul li img{
+	height: 100%;
+	width: 100%;
+}
+.seven_top .wechat{
+	background-color: #fbfbfb;
+	box-shadow: none;
+	position: relative;
+}
+.weibo::after{
+	content: '';
+	
+}
+.feige::after{
+	display: none;
+	content: '';
+	background-image: url('../img/index/icon_twitter_hover.png');
+	z-index: 4;
+}
+
+.feige:hover::after{
+	display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.seven_center{
+	position: relative;
+	display: flex;
+}
+.seven_center_content{
+	
+	margin-right: 100px;
+	display: inline-block;
+}
+.seven_center_content p{
+	margin-top: 50px;
+	margin-bottom: 30px;
+	font-size: 19px;
+}
+	
+.seven_center_content ul li{
+	margin: 10px 0;
+	font-size: 14px;
+}
+.seven_logo{
+	position: absolute;
+	top: 50%;
+	right: 75px;
+	width: 212px;
+	height: 28px;
+}
+.seven_logo img {
+	width: 100%;
+}
+@media screen and (max-width:777px){
+	.seven_logo{
+		display: none;
+	}
+}
+.seven_end{
+	margin-top: 60px;
+}
+.seven_end p {
+	margin-bottom: 10px;
+}

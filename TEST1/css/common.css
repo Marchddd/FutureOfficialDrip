@@ -1,0 +1,670 @@
+.w {
+	width: 1200px;
+	margin: 0 auto;
+}
+body {
+	overflow: scroll;
+	overflow-x: hidden;
+}
+/* 头顶制作 */
+.fix {
+	width: 100%;
+	position: sticky;
+	top: 0;
+	height:102px ;
+	background-color: white;
+	z-index: 2;
+}
+.header {
+	position: relative;
+	height: 102px;
+	background-color: white;
+	
+}
+.fl {
+	position: absolute;
+	left: 0;
+	height:102px;
+	width: 130px;
+    
+}
+.fl a{
+	display: block;
+	width: 130px;
+	height: 102px;
+	background: url(../img/a.png)no-repeat ;
+	font-size: 0;
+}
+.fr{
+	position: absolute;
+	top:20px;
+	left: 277px;
+}
+.fr a {
+	float: left;
+	width: 300px;
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+	font-size: 18px;
+	background-color: #f2f2f2;
+	margin-left: 2px;
+	
+}
+.fr a:hover{
+	color: #848484;
+}
+
+/* 头制作 */
+.head {
+	position: relative;
+	height: 705px;
+	background: url(../img/programming.jpg) center;
+	background-size:cover;
+}
+
+.hehehe {
+	position: relative;
+	width: 1200px;
+	height: 705px;
+	margin: 0 auto;
+}
+.head i {
+	position: absolute;
+	left: 150px;
+	top: 400px;
+	font-size: 50px;
+	font-weight: 600;
+	color: white;
+}
+.head .box {
+	
+	cursor: pointer;
+	position: absolute;
+	right: 90px;
+	bottom: 100px;
+	width: 200px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 20px;
+	text-align: center;
+	color: #ffffff;
+	background-color:black;
+	box-shadow: 0 10px 30px rgb(225 225  225 / 40%);
+}
+.top-left {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 5px;
+	height: 0;
+	transition: .4s;
+	}
+.top-right{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 5px;
+	transition: .4s;
+}
+.bottom-left{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 5px;
+	transition: .4s;
+}
+.bottom-right{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 5px;
+    height: 0;
+	transition: .4s;
+}
+
+.box:hover .top-left
+
+{
+	height: 100%;
+	background-color: white;
+	
+}
+.box:hover .bottom-right
+{
+	height: 100%;
+	background-color: white;	
+}
+
+.box:hover .top-right
+{
+	width: 100%;
+	background-color: white;
+}
+.box:hover .bottom-left{
+	width: 100%;
+	background-color: #fff;
+}
+
+
+/* 小组介绍 */
+
+.introduce {
+	
+	height: 539px;
+	
+}
+.core {
+	margin-top: 20px;
+}
+.core:after{/*伪元素是行内元素 正常浏览器清除浮动方法*/
+        content: "";
+        display: block;
+        height: 0;
+        clear:both;
+        visibility: hidden;
+    }
+.p1 {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 50px;
+  font-weight: 600;
+  color: #083791;
+}
+.left {
+	
+	margin-left: 40px;
+	margin-right: 20px;
+	float: left;
+	height: 400px;
+    width: 600px;
+	overflow: hidden;
+	border-radius: 5px;
+	
+}
+
+.left img {
+	
+	
+	height: 400px;
+	width: 600px;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+.left img:hover {
+	transform: scale(1.5);
+}
+.right::after {
+	content: "";
+	display: block;
+	height: 0;
+	clear:both;
+	visibility: hidden;	
+}
+.right p{
+	
+	text-align: center;
+	font-size: 16px;
+	text-align: justify;
+}
+
+
+
+
+
+
+
+/* 指导老师 */
+.teachers {
+	height: 645px;
+	z-index: -1;
+	background:url('../img/heardone(1).png') center fixed;
+	/* 图片的cover是指按照图片原来的长和宽等比放大 */
+	background-size: cover;
+	
+	
+}
+.center{
+	text-align: center ;
+}
+.justify {
+	text-align: justify;
+}
+.gao {
+	float: left;
+	margin-top: 70px;
+	height: 38em;
+	width: 40em;
+	background-color: #fff;
+}
+	.li {
+		float: right;
+		margin-top: 70px;
+		height: 38em;
+		width: 40em;
+		background-color: #fff;
+	}
+.touxiang1 {
+	
+	margin-top: 20px;
+	margin-left: 150px;
+	height: 180px;
+	width: 180px;
+	border-radius: 90px;
+	background: url(../img/l1.jpg) no-repeat;
+	background-size: cover;
+	
+}
+	
+.touxiang2{
+	margin-top: 20px;
+	margin-left: 150px;
+	height: 180px;
+	width: 180px;
+	border-radius: 90px;
+	background:url(../img/l2.png) no-repeat ;
+	background-size: cover;
+	
+}
+	
+.wenzi {
+	margin: 0 30px;
+	font-size:16px;
+	color: #000;
+}
+
+
+/* 项目展示模块 */
+.projects{
+	
+	height: 750px;
+	background-color:#f2f2f2;
+}
+
+@media screen and (max-width:1007px) {
+	.projects{
+	display: flex;
+	height: 1200px;
+	}
+}/* 
+上面的和下面的其实并不对应,也就是两者的变化时刻不一样,所呈现出来的页面也注定不一样,现在需要给它们设定一个统一的值,保证媒体查询使用的时间相同
+ */
+	
+.the-top {
+	height: 270px;
+}
+.the-bottom {
+	height: 270px;
+}
+.tudou {
+	
+	position: relative;
+	display: inline-block;
+	margin-top: 20px ;
+	margin-left: 10px;
+	height: 250px;
+	width: 350px;
+	overflow: hidden;
+	cursor: pointer;
+}
+.tudou img {
+	width: 350px;
+	height:250px;
+	transition: all 0.5s;
+}
+.mask {
+	/* display: none; */
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 0;
+	width: 0;
+	background: rgba(0 ,0, 0, .5) ;
+	text-align: center;
+	line-height:100% ;
+	transition:all .6s;
+	/* z-index: 1; */
+	
+}
+
+.tudou:hover  .mask{
+	height: 250px;
+	width: 350px;
+	/* display: block; */
+}
+
+.tudou:hover img{
+	transform: scale(1.25);
+}
+
+.tudoumore {
+	/* 接下来是绝对定位中垂直居中的方法 */
+	position: absolute;
+	left: 42%;
+	top: 45%;
+	background-color: skyblue;
+	line-height: 25px;
+	width: 0;
+	height: 0;
+	color: rgba(0 ,0, 0, 0);
+	border-radius:15px;
+}
+.tudou:hover .tudoumore {
+	height: 25px;
+	width: 60px;
+	color: white;
+}
+
+/* 小组精神模块 */
+.spirit {
+	
+	height: 700px;
+	background: url(../img/middle.jpg) center fixed;
+	background-size: cover;
+}
+.emotion {
+	
+	position: relative;
+	height: 700px;
+	text-align: center;
+}
+.bodyleft,.bodyright {
+	
+	position: absolute;
+	width: 350px;
+	height: 331px;
+	
+	background-color: #ebeced;
+	text-align: center;
+	
+}
+.bodyleft {
+	top: 100px;
+	left: 100px;
+}
+.bodyright {
+	top: 100px;
+	right: 100px;
+	
+}
+.emotion p {
+	position: absolute;
+	font-size: 20px;
+	bottom: 100px;
+	right: 30%;
+}
+.value1 ,.value2 {
+	
+	position: absolute;
+	height:100px;
+	width: 100px;
+	line-height: 90px;
+	bottom: 200px;
+	right: 125px;
+	overflow: hidden;
+	border-radius: 50px;
+	transition: all .4s;
+	transition-timing-function:ease-in;
+}
+/* 细心一下,盒子该怎么设置
+ */
+.hezi1,.hezi2 {
+	position: absolute;
+	width: 100%;
+	height: 0;
+	bottom: 0;
+	overflow: hidden;
+	transition: all .4s;
+	transition-timing-function:ease-in;
+}/* 
+.hezi1 img ,.hezi2 img {
+	position: fixed;
+} */
+.haha1,.haha2 {
+	
+	height: 100px;
+	width: 100px;
+	bottom: 200px;
+}
+.haha1 {
+	float: left;
+	
+}
+.haha2 {
+	float: right;
+}
+
+
+.bodyleft:hover .hezi1 {
+	height: 100%;
+	background-color: #f4a000;
+}
+.bodyright:hover .hezi2 {
+	height: 100%;
+	background-color: #f4a000;
+}
+.bodyleft:hover img {
+	filter: grayscale(100%) brightness(200%);
+}
+.bodyright:hover img {
+	filter: grayscale(100%) brightness(200%);
+}
+
+/* 小组新闻页面 */
+.news {
+	height: 800px;
+	background-color: #f2f2f2;	
+	}
+.father1 {
+	display: flex;
+	flex-flow: row;
+	justify-content: space-evenly;
+}
+.father2 {
+	display: flex;
+	margin-top: 20px;
+	flex: row;
+	justify-content: space-evenly;
+}
+.m1 {
+	position: relative;
+	width: 560px;
+	height: 300px;
+	line-height: 300px;
+	font-weight: 700;
+	font-size: 30px;
+	color: #fff;	
+	}
+	.m1 img {
+		position: absolute;
+		height: 300px;
+		width: 100%;
+		
+	}
+		
+	.m1 i {
+		position: absolute;
+		top: 0;
+		padding-left: 20px;
+		z-index: 1;	
+	}
+/* 需要再写一个遮罩层 */
+
+.zhezhao {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0 ,0, 0, .3);
+	
+}
+.m1:hover .zhezhao {
+	display: block;
+}
+.fuzhu {
+	height: 50px;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.viewmore {
+		border: solid blue 2px;
+	height: 30px;
+	width: 150px;
+	margin: center;
+	text-align: center;
+	background-color: blue;
+	border-radius: 20px;
+	transition: all .4s;
+	
+}
+.viewmore a{
+	
+	line-height: 30px;
+	color: white;
+	font-size: 14px;
+	
+}
+.viewmore:hover {
+
+	background-color: white;
+	color: black;
+}
+.viewmore:hover a {
+	color: blue;
+}
+.bottom {
+	
+	background-color: black;
+	height: 500px;
+}
+.bixu {
+	position: relative;
+	height: 500px;
+}
+.wahaha {
+	position: absolute;
+	top:67px;
+	
+	width: 580px;
+	height: 255px;
+	
+	
+}
+.logoleft{
+	display: inline-block;
+	width: 200px;
+	height: 100%;
+	background: url(../img/logoFooter.png) center no-repeat;
+     background-size: contain;
+}
+
+
+/* 当像素小到一定的值的时候,就没有logo了*/
+@media screen and (max-width:1205px){
+	.logoleft{
+		display: none;
+	}
+	
+}
+/* 由于要求当logo消失的时候,右边的细节能够向左跑,所以,不能够添加绝对定位 */
+.detailright {
+	display: inline-block;
+	position: absolute;
+	margin-left: 20px;
+	top: 50px;
+	}
+	
+	.detailright p{
+	    cursor:pointer;
+		color: white;
+		font-size: 18px;
+	} 
+	
+	/* 当屏幕像素小到一定程度的时候要求搜索框能够在左边盒子的下面 */
+	@media screen and (max-width:1007px) {
+		.nienie {
+		  position: absolute;
+		  left: 0;
+		  top: 0;
+		  margin: auto;
+		}
+		
+	}
+	@media screen and (max-width:1007px) {
+		.detailright .eeend1 {
+			display: none;
+		}
+	}
+	.nienie {
+		position: absolute;
+		top: 200px;
+		height: 55px;
+		width: 300px;
+			right: 100px;
+			
+	}
+	.nienie input{
+		float: left;
+		width: 250px;
+		height: 100%;
+		padding-left:20px ;
+	}
+		
+	.nienie button {
+		float: left;
+		height: 100%;
+		width: 50px;
+		background-color: deepskyblue;
+	}
+		
+	.dddd {
+		text-align: center;
+		
+	}
+.mmm {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom :20px;
+	color: white;	
+	font-size: 18px;
+}
+
+.mmm a{
+	color: white;
+}
+.mmm a:hover{
+	color: blue;
+}
+.arrow {
+	display:inline-block;
+	position: fixed;
+	right: 0px;
+	bottom: 100px;
+	height: 52px;
+	width: 52px;
+	z-index: 1;
+	text-align: center;
+	line-height: 52px;
+	border-radius: 20px;
+	background-color: #bfb9b9;
+	transition: 0.5s;
+}
+.arrow img {
+	
+	width: 80%;
+	height: 80%;
+}
+.arrow:hover {
+	border-radius: 0;
+	
+}
+.arrow a {
+	font-size: larger;
+}

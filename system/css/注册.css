@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height:100%;
+    width:100%;
+    background-color:#eae5e3 ;
+}
+html{
+    height: 100%;
+}
+/*版心*/
+/*下面是注册的css*/
+.w{
+    width:400px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+/*大容器*/
+.all{
+    height:100%;
+    width:100%;
+    background-color: skyblue;
+    position: relative;
+    background-image: url(../img/注册.png);
+    background-size: 100% 100%;
+}
+.contain{
+    padding: 0 20px;
+    box-sizing: border-box;
+    height:300px;
+    background-color: #ffffff;
+    opacity: 0.7;
+    border-radius: 5px;
+    margin-top: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+/*grid布局*/
+.sin{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    width:100%;
+    height:30px;
+    margin: 10px 0;
+}
+.sina{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    width:100%;
+    height:30px;
+    margin: 10px 0;
+}
+/*注册大标题，因为这个页面就一个h3所以没添加class或id*/
+h3{
+    text-align: center;
+    margin-top: 20px;
+    color: #0970ba;
+}
+/*注册按钮*/
+#sing{
+    width: 100%;
+    padding: 5px 0;
+    outline: none;
+    color: #ffffff;
+    border: 0;
+    background-color: #0970ba;
+    transition: all 0.3s;
+}
+#sing:hover{
+    background-color: #eae5e3;
+    color: #0970ba;
+}
+/*获取验证码按钮*/
+.btn2{
+    width: 100%;
+    padding: 5px 0;
+    outline: none;
+    color: #ffffff;
+    border: 0;
+    background-color: #0970ba;
+    font-size: 12px;
+    transition: all 0.3s;
+}
+/*给输入框添加样式*/
+.inp{
+    outline: none;
+    border: 0;
+    border-bottom: 1px solid black;
+}
+.inp::-webkit-input-placeholder{
+    color: skyblue;
+}
+.sin>div:nth-child(1){
+    color: #0970ba;
+}
+.sina>div:nth-child(1){
+    color: #0970ba;
+}

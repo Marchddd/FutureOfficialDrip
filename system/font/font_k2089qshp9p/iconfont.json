@@ -1,0 +1,58 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "15617644",
+      "name": "github",
+      "font_class": "github",
+      "unicode": "e8fd",
+      "unicode_decimal": 59645
+    },
+    {
+      "icon_id": "15726823",
+      "name": "箭头 上",
+      "font_class": "jiantoushang",
+      "unicode": "e61b",
+      "unicode_decimal": 58907
+    },
+    {
+      "icon_id": "15726827",
+      "name": "箭头 下",
+      "font_class": "jiantouxia",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    },
+    {
+      "icon_id": "15779765",
+      "name": "信封",
+      "font_class": "xinfeng",
+      "unicode": "e70c",
+      "unicode_decimal": 59148
+    },
+    {
+      "icon_id": "16063960",
+      "name": "用户",
+      "font_class": "ic_user_platform",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "16271654",
+      "name": "放大镜",
+      "font_class": "fangdajing",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "20654901",
+      "name": "b13",
+      "font_class": "b13",
+      "unicode": "e61d",
+      "unicode_decimal": 58909
+    }
+  ]
+}

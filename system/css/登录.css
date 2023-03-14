@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+a{
+    text-decoration: none;
+    color: #e83929;
+}
+/*引入图标*/
+@font-face {font-family: "iconfont";
+    src: url('../font/font_k2089qshp9p/iconfont.eot?t=1617087841048'); /* IE9 */
+    src: url('../font/font_k2089qshp9p/iconfont.eot?t=1617087841048#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../font/font_k2089qshp9p/data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAMEAAsAAAAABuwAAAK2AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCCfgqBUIE9ATYCJAMMCwgABCAFhG0HQxsIBsgekiQlAj04KhVUAYAERVCNoXv/HwKQJIF0WCEqk7IRFba6U1VV4arZiPyfXfUX6rVqpVG0VgSFjaqeHlW/6po1Qx2oiAwvvMvEINrWIAKv5/NcTm8CnUXzA+W4F+1hgzb1AowDCnDMTVZEEaciXrOL3Eyg1qBSPput3X0QrLB7BeJZU0UILgQURUxXC5UNE4v4pEJ1eknvgI/R9+M/WwSTVGT2wJ3bFgXqf6V+SfObe51zHBCCBEyvQMY8UIijxsQOPyFyfmoT/sbBsVoFv9L29viVGtjFUXmJ+OvczHowjWTiV6qn9WgyTJFABpXF1DKwzdj2B4YYYHKjmCTsChuf45Tzt/MvHk1VL7398LoIHzhcuH2avum5vXjs4R01urMTv1lSf+C9+0cKlUcDm0J5SmpUuf5VDguYtMMJj8Kg71u0+PD3ZrhyoNz5vyuWDgVctWQ3OX26sp4BNmz+PBcN5U8+z0a7oPz5Qlf4hXP2z+QfSQEgf08a+CD48t1366yp+uDQAn6u/RFZXpEeAFSf1Rn8QdnAqmIobFsumtSTWq5sYEA8odZwe2V7Wn2aru8YnEuo1jHBWDU5lVUbz8jCzqNCnQVUqraCWnPaptdpw/iJUoNZy4TQ7BqSRl+RNXtPFvYjKnT6jUrN4YdaRxG7YJ3J0IQmhkWOFSSNI02mHuI6uBBn92DV6xJZXhHxBzAztDCymizldBv2YLbEEGNEtXFOEGHUjVppO+xyUaQz6sAyN9k51yvNZtL0JpNM3SDYwGAiDlMgknGIRkZ5kKA+J1Q+3wNTebmIWEdFXXIAxhi05hErE8sAsk3rGVTxKNcYRqhsOI5ACIZyQ1qpHebiQiF6czsHTMaZ2CfEdJXMTi0yVGvaXu/+vw1Qy14gR4ocRf2jJno49Rr20K4KOdUYLAAAAA==') format('woff2'),
+    url('../font/font_k2089qshp9p/iconfont.woff?t=1617087841048') format('woff'),
+    url('../font/font_k2089qshp9p/iconfont.ttf?t=1617087841048') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url('../font/font_k2089qshp9p/iconfont.svg?t=1617087841048#iconfont') format('svg'); /* iOS 4.1- */
+  }
+  i{
+      font-family: "iconfont";
+      font-style: normal;
+  }
+  /*鼠标跟随*/
+  html{
+      height: 100vh;
+    cursor: grab;
+}
+html:active{
+    cursor: grabbing;
+}
+.mouse{
+width:25px;
+height:25px;
+border: 2px solid white;
+border-radius: 50%;
+position:absolute;
+transition: top 0.005s ;
+transition: left 0.005s ;
+z-index: 1;
+}
+.icont{
+color: white;
+position: relative;
+top: -30px;
+left: 5px;
+opacity: 0;
+transition: all 0.3s;
+font-weight: 900;
+}
+.iconb{
+color: white;
+position: relative;
+bottom: -25px;
+left: 5px;
+opacity: 0;
+transition: all 0.3s;
+font-weight: 900;
+}
+/*设置背景*/
+.contain{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../img/195707-1504526227fada.jpg) ;
+    background-size: 100% 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+}
+/*登录页面*/
+.center{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    border-radius: 6px;
+    background-color: #fff;
+    width: 400px;
+    height: 300px;
+    padding: 25px 25px 5px 25px;
+}
+.center>h3{
+    text-align:center;
+    color: #d6555f;
+    margin-bottom: 20px;
+}
+.sign>input{
+    border: 1px solid #e6cde3;
+    outline: none;
+    width:100%;
+    height:30px;
+    border-radius: 2px;
+}
+.sign{
+    margin: 10px 0;
+}
+.signbtn{
+    width:100%;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+    background-color: #e4ab9b;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    color: #ffffff;
+}
+.signbtn:hover{
+    background-color: #e95464;
+}
